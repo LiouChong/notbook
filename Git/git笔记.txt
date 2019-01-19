@@ -15,3 +15,7 @@ git reflog 记录每一次的操作
 删除分支：git branch -d <name>
 
 git remote remove <name>
+
+git push origin master
+
+git commit -m ""
