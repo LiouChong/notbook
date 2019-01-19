@@ -1,0 +1,23 @@
+springboot mybatis mysql8.0 异常 invalid bound statement (not found)
+(1,2都要设置)
+	1.设置mapper的位置，不然找不到s。需要自己设置！！mybatis.mapper-locations=com/lc/druidtest_2/entity/mapper/*.xml
+	2.设置resources:
+		
+        <resources>
+            <resource>
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.properties</include>
+                <include>**/*.xml</include>
+            </includes>
+            <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+

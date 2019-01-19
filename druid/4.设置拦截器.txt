@@ -1,0 +1,8 @@
+
+@WebFilter(filterName = "druidWebStstFilter",urlPatterns = "/*",
+    initParams = {
+        @WebInitParam(name="exclusions",value = "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*")
+    }
+)
+public class DruidStstFilter extends WebStatFilter {
+}

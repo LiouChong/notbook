@@ -1,0 +1,1 @@
+进入http://localhost:8080/druid/index.html后台进行管理

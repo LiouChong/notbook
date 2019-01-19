@@ -1,0 +1,5 @@
+1.下载tomcat镜像
+2.把war包导入到linux中
+3.将linux中的war包放入到docker中的tomcat中
+使用docker cp war名字 容器id:/usr/local/tomcat/webapps
+4.可以通过docker exec -it 容器id bash进入tomcat文件目录下

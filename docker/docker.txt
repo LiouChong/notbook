@@ -1,0 +1,9 @@
+docker pull 名字 ：（下载XX镜像）
+docker ps （查看运行的镜像）
+sudo service docker start （启动docker）
+docker kill 镜像id （停止镜像）
+docker run -d -p 端口/端口 镜像 （启动镜像并把端口映射到主机）
+docker rmi id （删除镜像）
+docker exec -it CONTAINERID redis-cli (进入redis)
+
+docker cp test.war containerID:/usr/local/tomcat/webapps/ （将test.war复制到docker的id为containerID的tomcat的webapps文件下）
