@@ -1,0 +1,10 @@
+为userId, mobile, billMonth三个字段添加上联合索引！
+1.查询条件为 userid 有效
+2.查询条件为 mobile 无效
+3.查询条件为 billMonth 无效
+4.查询条件为 userid and mobile 有效
+5.查询条件为 mobile and userid 有效
+6.查询条件为 userid or mobile 无效
+7.查询条件为 userid and billMonth 有效
+8.查询条件为 mobile and billMonth 无效
+9.查询条件为 userid and mobile and billMonth 有效

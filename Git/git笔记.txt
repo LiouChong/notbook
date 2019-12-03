@@ -19,3 +19,6 @@ git remote remove <name>
 git push origin master
 
 git commit -m ""
+
+git remote remove <name> É¾³ý²Ö¿â
+git remote add origin XXX Ìí¼Ógit²Ö¿â
