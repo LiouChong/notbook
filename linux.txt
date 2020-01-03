@@ -1,0 +1,9 @@
+查看日志 less全量查看 :
+sheft + ? 搜索关键字
+n键 往上检索关键字
+sheft + n 往下检索关键字
+
+netstat -tunlp|grep 8080 查看端口占用情况
+
+netstat -nupl (UDP类型的端口)
+netstat -ntpl (TCP类型的端口)

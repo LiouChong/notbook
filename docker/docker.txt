@@ -7,3 +7,8 @@ docker rmi id （删除镜像）
 docker exec -it CONTAINERID redis-cli (进入redis)
 
 docker cp test.war containerID:/usr/local/tomcat/webapps/ （将test.war复制到docker的id为containerID的tomcat的webapps文件下）
+
+docker构建ubuntu apt速度太慢添加以下命令
+RUN  sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
+RUN  apt-get clean
+
