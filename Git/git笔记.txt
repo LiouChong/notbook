@@ -22,3 +22,7 @@ git commit -m ""
 
 git remote remove <name> 删除仓库
 git remote add origin XXX 添加git仓库
+
+远程删除标签：
+先删除本地，然后推送到远程： 其中56-asset-1.1-v1.02.07 为tag名称
+git push origin :refs/tags/56-asset-1.1-v1.02.07

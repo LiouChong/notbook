@@ -1,0 +1,3 @@
+mysqldump -ukbms_code -p2q2xn$$34COix#Kp init(数据库名字) --tables tableName >C:\Users\hexiufeng\Desktop\20200628\patch.sql
+
+mysql -uroot -p  db_name < /backup/mysqldump/db_name.db

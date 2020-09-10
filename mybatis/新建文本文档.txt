@@ -1,0 +1,9 @@
+Mybatis执行流程
+    1. SqlSessionFactoryBuidler：用来创建SQLSessionFactory的建造者模式类。主要干两件事：1.解析XML文件，生成Configuration对象。2.根据configuration对象创建SqlSessionFactory。
+    2. SQLSessionFactory， 用来创建SqlSession的工厂类，此时可以对SqlSession进行设置，例如关闭自动提交、指定数据库隔离级别。
+    3. SqlSession, 可以看做一个对数据库的连接，用以执行SQL语句，有commit、rollback等方法。
+    4. Executor，创建SqlSession的时候会同时创建Executor类，该类用来执行sql语句
+    5. StatementHandler，executor会把sql语句的执行交于statementhandler处理，statementHandler会做三件事：1.预处理sql 2.调用statement.execute执行sql 3.将返回的结果集映射为对象。
+            ParamHandler: 对预处理后的SQL进行参数设定
+            Statement.execute执行sql
+            ResultHandler 将结果集映射到Java对象属性值
